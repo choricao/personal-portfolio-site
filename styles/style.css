@@ -1,1 +1,100 @@
+/********** color palette **********/
+/* color1: rgba(245, 227, 224, 1); #F5E3E0, cream
+color2: rgba(232, 180, 188, 1); #E8B4BC, light pink
+color3: rgba(210, 130, 166, 1); #D282A6, pink
+color4: rgba(110, 69, 85, 1); #6E4555, dark pink
+color5: rgba(58, 50, 56, 1); #3A3238, really dark pink */
 
+/********** global **********/
+html, body {
+  font-family: Arial, Helvetica, sans-serif;
+
+  height: 100%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+a {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #F5E3E0;
+  text-decoration: none;
+}
+
+/********** nav **********/
+nav {
+  background-color: #D282A6;
+
+  position: fixed;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  z-index: 2;
+  opacity: 0.8;
+}
+
+nav ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+}
+
+/********** header **********/
+header {
+  background-color: #F5E3E0;
+
+  height: 100%;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  color: #6E4555;
+  text-align: center;
+
+  margin: 50px;
+}
+
+header a {
+  color: #D282A6;
+
+  margin: 10px;
+  padding: 10px;
+  border: 4px dotted #3A3238;
+  border-radius: 25px;
+}
+
+/********** footer **********/
+footer {
+  color: #3A3238;
+  text-align: center;
+}
+
+/********** small screen **********/
+@media screen and (max-width: 600px) {
+  nav {
+    height: 200px;
+  }
+
+  nav ul {
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav li {
+    height: 20%;
+  }
+
+  header a {
+    display: none;
+  }
+}
