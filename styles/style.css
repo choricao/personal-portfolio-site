@@ -124,6 +124,7 @@ header a::after {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   justify-items: center;
+  align-items: flex-start;
 }
 
 .projects li {
@@ -150,6 +151,18 @@ header a::after {
   width: 300px;
   padding-bottom: 30px;
   text-align: justify;
+}
+
+.projects p::before {
+  content: "✒︎"
+}
+
+.projects #about_link {
+  font-family: 'Handlee', cursive;
+  text-decoration: underline;
+  color: #6E4555;
+  line-height: 2em;
+  font-size: 1em;
 }
 
 /********** journals **********/
