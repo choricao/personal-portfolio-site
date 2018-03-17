@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Emilys+Candy|Handlee|Sofia');
+/* font-family: 'Emilys Candy', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Handlee', cursive;
+font-family: 'Sofia', cursive; */
+
 /********** color palette **********/
 /* color1: rgba(245, 227, 224, 1); #F5E3E0, cream
 color2: rgba(232, 180, 188, 1); #E8B4BC, light pink
@@ -7,14 +13,20 @@ color5: rgba(58, 50, 56, 1); #3A3238, really dark pink */
 
 /********** global **********/
 html, body {
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
 
   height: 100%;
 }
 
-h1, h2 {
+h1, h2, h3, h5 {
+  font-family: 'Emilys Candy', cursive;
   color: #6E4555;
   text-align: center;
+}
+
+p {
+  font-family: 'Handlee', cursive;
+  text-align: justify;
 }
 
 ul {
@@ -32,6 +44,7 @@ a {
 
 /********** nav **********/
 nav {
+  font-family: 'Emilys Candy', cursive;
   background-color: #D282A6;
 
   position: fixed;
@@ -59,10 +72,12 @@ header {
 }
 
 header h1 {
+  font-family: 'Dancing Script', cursive;
   margin: 50px;
 }
 
 header a {
+  font-family: 'Emilys Candy', cursive;
   color: #D282A6;
 
   margin: 10px;
@@ -98,6 +113,7 @@ header a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
 }
 
 .projects h2 {
@@ -112,6 +128,7 @@ header a {
 
 .projects p {
   width: 300px;
+  padding-bottom: 30px;
   text-align: justify;
 }
 
@@ -133,9 +150,13 @@ header a {
   margin: 0 50px;
 }
 
+.blogs li {
+  border-bottom: 2px dotted #6E4555;
+}
+
 /********** about **********/
 .about {
-  min-height: 800px;
+  height: 100%;
   margin-top: 60px;
 
   display: flex;
@@ -147,7 +168,11 @@ header a {
 .about img {
   width: 300px;
   border: 2px black solid;
-  margin: 50px 0;
+  margin: 50px 0 0 0;
+}
+
+.about h2 {
+  margin-bottom: 0;
 }
 
 .about p {
