@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Emilys+Candy|Handlee|Sofia');
+/********** google fonts **********/
 /* font-family: 'Emilys Candy', cursive;
 font-family: 'Dancing Script', cursive;
 font-family: 'Handlee', cursive;
@@ -13,15 +14,27 @@ color5: rgba(58, 50, 56, 1); #3A3238, really dark pink */
 
 /********** global **********/
 html, body {
-  /* font-family: Arial, Helvetica, sans-serif; */
-
   height: 100%;
 }
 
+header, .projects, .journals, .about {
+  min-height: 800px;
+  margin-top: 60px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+header h1, .journals ul, .about p {
+  max-width: 800px;
+  margin: 0 50px;
+}
+
 h1, h2, h3, h5 {
+  text-align: center;
   font-family: 'Emilys Candy', cursive;
   color: #6E4555;
-  text-align: center;
 }
 
 h3::before {
@@ -33,23 +46,28 @@ h3::after {
 }
 
 p {
-  font-family: 'Handlee', cursive;
   text-align: justify;
-  color: #6E4555;
   line-height: 2em;
+  font-family: 'Handlee', cursive;
+  color: #6E4555;
 }
 
 ul {
+  text-align: center;
   list-style-type: none;
   padding: 0;
-  text-align: center;
 }
 
 a {
+  text-decoration: none;
   font-size: 1.4em;
   font-weight: bold;
   color: #F5E3E0;
-  text-decoration: none;
+}
+
+img {
+  width: 300px;
+  height: 300px;
 }
 
 /********** nav **********/
@@ -57,10 +75,10 @@ nav {
   font-family: 'Emilys Candy', cursive;
   background-color: #D282A6;
 
-  position: fixed;
-  top: 0;
   height: 60px;
   width: 100%;
+  position: fixed;
+  top: 0;
   z-index: 2;
 }
 
@@ -74,11 +92,7 @@ header {
   background-color: #F5E3E0;
 
   height: 100%;
-
-  display: flex;
-  flex-flow: column nowrap;
   justify-content: center;
-  align-items: center;
 }
 
 header h1 {
@@ -90,8 +104,7 @@ header a {
   font-family: 'Emilys Candy', cursive;
   color: #D282A6;
 
-  margin: 10px;
-  padding: 10px;
+  margin: 20px;
 }
 
 header a:hover {
@@ -107,20 +120,9 @@ header a::after {
 }
 
 /********** portfolio **********/
-.projects {
-  min-height: 800px;
-
-  margin-top: 60px;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-}
-
 .projects ul {
   min-height: 650px;
   width: 90%;
-
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   justify-items: center;
@@ -129,28 +131,18 @@ header a::after {
 
 .projects li {
   width: 300px;
-
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-
 }
 
 .projects h2 {
   margin: 10px;
 }
 
-.projects img {
-  width: 300px;
-  height: 300px;
-  border: 2px solid;
-}
-
 .projects p {
   width: 300px;
   padding-bottom: 30px;
-  text-align: justify;
 }
 
 .projects p::before {
@@ -158,59 +150,34 @@ header a::after {
 }
 
 .projects #about_link {
-  font-family: 'Handlee', cursive;
   text-decoration: underline;
-  color: #6E4555;
-  line-height: 2em;
+  font-family: 'Handlee', cursive;
   font-size: 1em;
+  line-height: 2em;
+  color: #6E4555;
 }
 
 /********** journals **********/
-.journals {
-  min-height: 800px;
-
-  margin-top: 60px;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: start;
-  align-items: center;
-}
-
 .journals ul {
   display: flex;
   flex-direction: column;
-  max-width: 800px;
-  margin: 0 50px;
 }
 
 .journals li {
   border-bottom: 2px dotted #6E4555;
 }
 
-/********** about **********/
-.about {
-  min-height: 800px;
-  margin-top: 60px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+.journals li:last-child {
+  border: none;
 }
 
+/********** about **********/
 .about img {
-  width: 300px;
-  border: 2px black solid;
-  margin: 30px 0 0 0;
+  margin-top: 30px;
 }
 
 .about h2 {
   margin-bottom: 0;
-}
-
-.about p {
-  max-width: 800px;
-  margin: 0 50px;
 }
 
 .about p::before {
@@ -247,7 +214,6 @@ footer {
   }
 
   nav li {
-    color: inherit;
     height: 20%;
   }
 
@@ -263,15 +229,7 @@ footer {
     display: none;
   }
 
-  .projects {
-    margin-top: 200px;
-  }
-
-  .journals {
-    margin-top: 200px;
-  }
-
-  .about {
+  .projects, .journals, .about {
     margin-top: 200px;
   }
 }
