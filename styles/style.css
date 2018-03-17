@@ -24,6 +24,14 @@ h1, h2, h3, h5 {
   text-align: center;
 }
 
+h3::before {
+  content: "❤︎ "
+}
+
+h3::after {
+  content: " ❤︎"
+}
+
 p {
   font-family: 'Handlee', cursive;
   text-align: justify;
@@ -82,8 +90,18 @@ header a {
 
   margin: 10px;
   padding: 10px;
-  border: 4px dotted #3A3238;
-  border-radius: 25px;
+}
+
+header a:hover {
+  color: #6E4555;
+}
+
+header a::before {
+  content: "❀ "
+}
+
+header a::after {
+  content: " ❀"
 }
 
 /********** portfolio **********/
@@ -168,7 +186,7 @@ header a {
 .about img {
   width: 300px;
   border: 2px black solid;
-  margin: 50px 0 0 0;
+  margin: 30px 0 0 0;
 }
 
 .about h2 {
@@ -201,7 +219,16 @@ footer {
   }
 
   nav li {
+    color: inherit;
     height: 20%;
+  }
+
+  nav a::before {
+    content: "❀ "
+  }
+
+  nav a::after {
+    content: " ❀"
   }
 
   header a {
