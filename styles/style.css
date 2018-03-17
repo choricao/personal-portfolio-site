@@ -39,7 +39,6 @@ nav {
   height: 60px;
   width: 100%;
   z-index: 2;
-  opacity: 0.8;
 }
 
 nav ul {
@@ -116,6 +115,24 @@ header a {
   text-align: justify;
 }
 
+/********** blogs **********/
+.blogs {
+  min-height: 800px;
+
+  margin-top: 60px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: start;
+  align-items: center;
+}
+
+.blogs ul {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 0 50px;
+}
+
 /********** footer **********/
 footer {
   color: #3A3238;
@@ -148,4 +165,7 @@ footer {
     margin-top: 200px;
   }
 
+  .blogs {
+    margin-top: 200px;
+  }
 }
