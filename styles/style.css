@@ -152,8 +152,8 @@ header a::after {
   text-align: justify;
 }
 
-/********** blogs **********/
-.blogs {
+/********** journals **********/
+.journals {
   min-height: 800px;
 
   margin-top: 60px;
@@ -163,14 +163,14 @@ header a::after {
   align-items: center;
 }
 
-.blogs ul {
+.journals ul {
   display: flex;
   flex-direction: column;
   max-width: 800px;
   margin: 0 50px;
 }
 
-.blogs li {
+.journals li {
   border-bottom: 2px dotted #6E4555;
 }
 
@@ -254,7 +254,7 @@ footer {
     margin-top: 200px;
   }
 
-  .blogs {
+  .journals {
     margin-top: 200px;
   }
 
