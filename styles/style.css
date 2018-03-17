@@ -12,6 +12,11 @@ html, body {
   height: 100%;
 }
 
+h1, h2 {
+  color: #6E4555;
+  text-align: center;
+}
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -55,9 +60,6 @@ header {
 }
 
 header h1 {
-  color: #6E4555;
-  text-align: center;
-
   margin: 50px;
 }
 
@@ -68,6 +70,50 @@ header a {
   padding: 10px;
   border: 4px dotted #3A3238;
   border-radius: 25px;
+}
+
+/********** portfolio **********/
+.projects {
+  min-height: 800px;
+
+  margin-top: 60px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects ul {
+  min-height: 650px;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: center;
+}
+
+.projects li {
+  width: 300px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects h2 {
+  margin: 10px;
+}
+
+.projects img {
+  width: 250px;
+  height: 250px;
+  border: 2px solid;
+}
+
+.projects p {
+  width: 250px;
+  text-align: justify;
 }
 
 /********** footer **********/
@@ -97,4 +143,9 @@ footer {
   header a {
     display: none;
   }
+
+  .projects {
+    margin-top: 200px;
+  }
+
 }
