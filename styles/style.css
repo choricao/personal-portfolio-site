@@ -84,10 +84,10 @@ header a {
 
 .projects ul {
   min-height: 650px;
-  width: 100%;
+  width: 90%;
 
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   justify-items: center;
 }
 
@@ -105,13 +105,13 @@ header a {
 }
 
 .projects img {
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   border: 2px solid;
 }
 
 .projects p {
-  width: 250px;
+  width: 300px;
   text-align: justify;
 }
 
@@ -129,6 +129,28 @@ header a {
 .blogs ul {
   display: flex;
   flex-direction: column;
+  max-width: 800px;
+  margin: 0 50px;
+}
+
+/********** about **********/
+.about {
+  min-height: 800px;
+  margin-top: 60px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.about img {
+  width: 300px;
+  border: 2px black solid;
+  margin: 50px 0;
+}
+
+.about p {
   max-width: 800px;
   margin: 0 50px;
 }
@@ -166,6 +188,10 @@ footer {
   }
 
   .blogs {
+    margin-top: 200px;
+  }
+
+  .about {
     margin-top: 200px;
   }
 }
