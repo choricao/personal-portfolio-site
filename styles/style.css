@@ -46,6 +46,7 @@ h3::after {
 }
 
 p {
+  font-size: 1.1em;
   text-align: justify;
   line-height: 2em;
   font-family: 'Handlee', cursive;
@@ -66,8 +67,9 @@ a {
 }
 
 img {
-  width: 300px;
-  height: 300px;
+  width: 332px;
+  height: 210px;
+  border: 2px double #E8B4BC;
 }
 
 /********** nav **********/
@@ -96,23 +98,34 @@ header {
   background-size: cover;
 
   height: 100%;
-  justify-content: center;
+  padding-top: 100px;
+}
+
+header h1, header h2 {
+  font-family: 'Dancing Script', cursive;
+  color: #D282A6;
 }
 
 header h1 {
-  font-family: 'Dancing Script', cursive;
-  margin: 50px;
+  font-size: 2.7em;
+  margin-top: 60px;
+}
+
+header h2 {
+  font-size: 2.5em;
+  margin-bottom: 60px;
 }
 
 header a {
+  font-size: 2em;
   font-family: 'Emilys Candy', cursive;
-  color: #D282A6;
+  color: #6E4555;
 
-  margin: 20px;
+  margin: 15px;
 }
 
 header a:hover {
-  color: #6E4555;
+  color: #D282A6;
 }
 
 header a::before {
@@ -177,8 +190,9 @@ header a::after {
 
 /********** about **********/
 .about img {
+  height: 300px;
+  width: 300px;
   margin-top: 30px;
-  border: 2px double #E8B4BC;
 }
 
 .about h2 {
@@ -191,11 +205,14 @@ header a::after {
 
 .about #date {
   text-align: right;
-  align-self: flex-end;
 }
 
 .about #date::before {
   content: "-- "
+}
+
+.about #date::after {
+  content: " --"
 }
 
 /********** footer **********/
@@ -232,6 +249,10 @@ footer {
 
   header {
     background-image: url("../images/narrow-background.jpg");
+  }
+
+  header h1 {
+    padding-top: 200px;
   }
 
   header a {
