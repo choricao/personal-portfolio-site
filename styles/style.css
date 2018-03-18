@@ -89,6 +89,32 @@ nav ul {
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
 }
 
+nav > ul > li > a:hover {
+  color: #6E4555;
+}
+
+nav .sub-nav ul {
+  background-color: #D282A6;
+
+  min-width: 200px;
+  padding: 10px 5px;
+  display: none;
+}
+
+nav .sub-nav:hover ul {
+  display: block;
+}
+
+nav .sub-nav ul a {
+  text-decoration: underline;
+  font-size: 1em;
+  font-weight: normal;
+}
+
+nav .sub-nav ul a:hover {
+  color: #6E4555;
+}
+
 /********** header **********/
 header {
   background-image: url("../images/wide-background.jpg");
@@ -237,6 +263,10 @@ footer {
 
   nav li {
     height: 20%;
+  }
+
+  nav .sub-nav:hover ul {
+    display: none;
   }
 
   nav a::before {
