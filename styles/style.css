@@ -202,6 +202,7 @@ header a::after {
 
 /********** journals **********/
 .journals ul {
+  min-width: 400px;
   display: flex;
   flex-direction: column;
 }
@@ -212,6 +213,17 @@ header a::after {
 
 .journals li:last-child {
   border: none;
+}
+
+.journals h2 > a {
+  text-align: center;
+  font-family: 'Emilys Candy', cursive;
+  font-size: 1em;
+  color: #6E4555;
+}
+
+.journals h2 > a:hover {
+  color: #D282A6;
 }
 
 /********** about **********/
