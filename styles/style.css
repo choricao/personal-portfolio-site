@@ -117,7 +117,7 @@ nav .sub-nav ul a:hover {
 
 /********** header **********/
 header {
-  background-image: url("../images/wide-background.jpg");
+  background-image: url("../images/background.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -287,10 +287,6 @@ footer {
 
   nav a::after {
     content: " ❀"
-  }
-
-  header {
-    background-image: url("../images/narrow-background.jpg");
   }
 
   header h1 {
