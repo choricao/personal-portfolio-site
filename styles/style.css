@@ -177,6 +177,7 @@ header a::after {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 30px;
 }
 
 .projects h2 {
@@ -185,7 +186,8 @@ header a::after {
 
 .projects p {
   width: 300px;
-  padding-bottom: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .projects p::before {
