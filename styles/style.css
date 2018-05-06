@@ -194,7 +194,7 @@ header a::after {
   content: "✒︎"
 }
 
-.projects #about_link {
+.projects .link {
   text-decoration: underline;
   font-family: 'Handlee', cursive;
   font-size: 1em;
